@@ -93,7 +93,7 @@ body{
 }
 
 .introWrapper .imageBuff{
-  background-image: url(../images/portrait.png);
+  background-image: url(../images/portrait.png), url(../images/portrait_low.png);
 }
 
 @media  (hover:none) {
