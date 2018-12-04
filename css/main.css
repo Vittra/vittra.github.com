@@ -73,22 +73,22 @@ body{
 /* 229 */
 
 .project5Wrapper .imageBuff{
-  background-image: url(../images/case_images/dreamhack_high.png), url(../images/case_images/dreamhack.png), url(../images/case_images/dreamhack_low.png);
+  background-image: /*url(../images/case_images/dreamhack_high.png),*/ url(../images/case_images/dreamhack.png), url(../images/case_images/dreamhack_low.png);
   background-size: 100%;
 }
 
 .project4Wrapper .imageBuff{
-  background-image: url(../images/case_images/moblrnWeb_high.png), url(../images/case_images/moblrnWeb.png), url(../images/case_images/moblrnWeb_low.png);
+  background-image: /*url(../images/case_images/moblrnWeb_high.png),*/ url(../images/case_images/moblrnWeb.png), url(../images/case_images/moblrnWeb_low.png);
   background-size: 100%;
 }
 
 .project3Wrapper .imageBuff{
-  background-image: url(../images/case_images/moblrnCMS_high.png), url(../images/case_images/moblrnCMS.png), url(../images/case_images/moblrnCMS_low.png);
+  background-image: /*url(../images/case_images/moblrnCMS_high.png),*/ url(../images/case_images/moblrnCMS.png), url(../images/case_images/moblrnCMS_low.png);
   background-size: 100%;
 }
 
 .project2Wrapper .imageBuff{
-  background-image: url(../images/case_images/moblrnApp_high.png), url(../images/case_images/moblrnApp.png), url(../images/case_images/moblrnApp_low.png);
+  background-image: /*url(../images/case_images/moblrnApp_high.png),*/ url(../images/case_images/moblrnApp.png), url(../images/case_images/moblrnApp_low.png);
   background-size: 100%;
 }
 
