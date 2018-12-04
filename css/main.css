@@ -55,7 +55,7 @@ body{
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 5px;
-
+  background-size: cover;
 }
 
 .textBox{
