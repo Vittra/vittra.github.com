@@ -31,13 +31,29 @@ body{
 nav{
 position: fixed;
 margin-top: 20vh;
-padding: 20px;
+padding-right: 20px;
+z-index: 5000;
+background-color: white;
+transition: 0.3s;
+/* margin-left: -100px; */
+box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+}
+
+.show{
+  margin-left: 0;
 }
 
 li{
   text-decoration: none;
   text-indent: inherit;
   list-style-type:none;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.activeLi{
+  font-weight: 900 !important;
+  pointer-events: none;
 }
 
 
