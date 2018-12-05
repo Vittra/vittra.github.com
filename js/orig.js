@@ -16,7 +16,15 @@ $( document ).ready(function() {
     var fifthBoxScroll = $(".project5Wrapper").offset().top;
     var fifthBoxheight = $(".project5Wrapper").height();
 
-    $(window ).keydown(function(keyPressed) {
+    $("li").click( function(j){
+      $("li").each( function(i){
+        if(j.html = "Case 0"+i){
+          console.log("click"+i);
+        }
+      })
+    });
+
+    $(window).keydown(function(keyPressed) {
       if (keyPressed.keyCode == 78) {
         $("#scrollBar").toggleClass("rainbow")
       }
@@ -32,7 +40,6 @@ $( document ).ready(function() {
           return toppen > distanceStart/5 && toppen < distanceStart+distanceEnd/50 && $('body').width() > 800;
       }
       if(isInView(secondBoxScroll, secondBoxheight)){
-        console.log("hej");
       $(".project2Wrapper .imageBuff").css({
         'transform' : 'scale(3) translateX(' + (((toppen-secondBoxScroll)*-windowWidth/1000)/2) + "px)"
       })};
