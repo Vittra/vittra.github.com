@@ -72,8 +72,7 @@ li{
   text-align: center;
   font-size: 2em;
   font-weight: 300;
-  font-style: italic;
-}
+   }
 
 .imageBuff{
   width: 100vw;
@@ -121,6 +120,8 @@ li{
 .introWrapper .imageBuff{
   background-image: url(../images/portrait_high.png), url(../images/portrait.png), url(../images/portrait_low.png);
 }
+
+
 
 @media  (hover:none) {
   body{
@@ -216,6 +217,10 @@ li{
 
 .textBox{
   transform: translateY(20vh);
+}
+
+#introTextbox{
+  transform: none !important;
 }
 
 /*
@@ -339,8 +344,7 @@ transform: scale(1.2);
 .textBoxGenre{
   font-size: 0.8em;
       font-weight: 300;
-      font-style: italic;
-}
+       }
 
 .textBoxTitle{
   font-size: 2em;
