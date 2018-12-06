@@ -16,35 +16,35 @@ $( document ).ready(function() {
     var fifthBoxScroll = $(".project5Wrapper").offset().top;
     var fifthBoxheight = $(".project5Wrapper").height();
 
-    $("nav").click(function(){
-      $(this).toggleClass("show")
-    });
-
-    $("li").click( function(){
-
-      function scrollTo(div){
-      	$('html, body').animate({
-      		scrollTop: $(div).offset().top
-      	},1000);
-      }
-
-      if (this.id =="1") {
-        scrollTo(".introWrapper")
-      }
-      if (this.id =="2") {
-        scrollTo(".project2Wrapper")
-      }
-      if (this.id =="3") {
-        scrollTo(".project3Wrapper")
-      }
-      if (this.id =="4") {
-        scrollTo(".project4Wrapper")
-      }
-      if (this.id =="5") {
-        scrollTo(".project5Wrapper")
-      }
-
-          });
+    // $("nav").click(function(){
+    //   $(this).toggleClass("show")
+    // });
+    //
+    // $("li").click( function(){
+    //
+    //   function scrollTo(div){
+    //   	$('html, body').animate({
+    //   		scrollTop: $(div).offset().top
+    //   	},1000);
+    //   }
+    //
+    //   if (this.id =="1") {
+    //     scrollTo(".introWrapper")
+    //   }
+    //   if (this.id =="2") {
+    //     scrollTo(".project2Wrapper")
+    //   }
+    //   if (this.id =="3") {
+    //     scrollTo(".project3Wrapper")
+    //   }
+    //   if (this.id =="4") {
+    //     scrollTo(".project4Wrapper")
+    //   }
+    //   if (this.id =="5") {
+    //     scrollTo(".project5Wrapper")
+    //   }
+    //
+    //       });
 
     $(window).keydown(function(keyPressed) {
       if (keyPressed.keyCode == 78) {
