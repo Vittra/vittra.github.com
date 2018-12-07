@@ -28,15 +28,7 @@ body{
 }
 
 
-/* nav{
-position: fixed;
-margin-top: 20vh;
-padding-right: 20px;
-z-index: 5000;
-background-color: white;
-transition: 0.3s;
-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
-}
+
 
 .show{
   margin-left: 0;
@@ -52,8 +44,8 @@ li{
 
 .activeLi{
   font-weight: 900 !important;
-  pointer-events: none;
-} */
+  /* pointer-events: none; */
+}
 
 
 .wrapper{
@@ -94,7 +86,7 @@ li{
   margin-bottom: 10px;
 
   padding: 30px 20px 20px 30px;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .project5Wrapper .imageBuff{
@@ -103,8 +95,124 @@ li{
 }
 
 .project4Wrapper .imageBuff{
-  background-image: /*url(../images/case_images/moblrnWeb_high.png),*/ url(../images/case_images/moblrnWeb.png), url(../images/case_images/moblrnWeb_low.png);
+  /* background-image: /*url(../images/case_images/moblrnWeb_high.png),*/ url(../images/case_images/moblrnWeb.png), url(../images/case_images/moblrnWeb_low.png);
   background-size: 100%;
+
+
+}
+
+.multiImageHolder{
+  width: 100vw;
+  max-width: 400px;
+  max-height: 600px;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+
+.imageDesktopHolder.moblrnApp{
+  position: absolute;
+  margin: 5vh;
+  height: 100vh;
+  max-height: 300px;
+  width: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;
+}
+
+.imageDesktopHolder{
+  position: absolute;
+  margin: 5vh;
+  height: 100vh;
+  max-height: 500px;
+  width: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;
+}
+
+
+.moblrnApp:nth-child(1){
+  background-image: url(../images/case_images/moblrnApp/moblrnApp1High.png), url(../images/case_images/moblrnApp/moblrnApp1.png), url(../images/case_images/moblrnApp/moblrnApp1Low.png);
+  margin-left: -43%;
+      margin-top: 0%;
+  }
+
+.moblrnApp:nth-child(2){
+  background-image: url(../images/case_images/moblrnApp/moblrnApp2High.png), url(../images/case_images/moblrnApp/moblrnApp2.png), url(../images/case_images/moblrnApp/moblrnApp2Low.png);
+  margin-left: -24%;
+margin-top: 10%;
+}
+
+.moblrnApp:nth-child(3){
+  background-image: url(../images/case_images/moblrnApp/moblrnApp3High.png), url(../images/case_images/moblrnApp/moblrnApp3.png), url(../images/case_images/moblrnApp/moblrnApp3Low.png);
+  margin-left: -11%;
+margin-top: 5%;
+  }
+
+  .moblrnApp:nth-child(4){
+    background-image: url(../images/case_images/moblrnApp/moblrnApp4High.png), url(../images/case_images/moblrnApp/moblrnApp4.png), url(../images/case_images/moblrnApp/moblrnApp4Low.png);
+    margin-left: -30%;
+      margin-top: -5%;
+    }
+
+.moblrnCMS:nth-child(1){
+  background-image: url(../images/case_images/moblrnCMS/moblrnCMS1High.png), url(../images/case_images/moblrnCMS/moblrnCMS1.png), url(../images/case_images/moblrnCMS/moblrnCMS1Low.png);
+  margin-left: 18%;
+  margin-top: -3%;
+  }
+
+.moblrnCMS:nth-child(2){
+  background-image: url(../images/case_images/moblrnCMS/moblrnCMS2High.png), url(../images/case_images/moblrnCMS/moblrnCMS2.png), url(../images/case_images/moblrnCMS/moblrnCMS2Low.png);
+  margin-left: -13%;
+margin-top: 12%;}
+
+.moblrnCMS:nth-child(3){
+  background-image: url(../images/case_images/moblrnCMS/moblrnCMS3High.png), url(../images/case_images/moblrnCMS/moblrnCMS3.png), url(../images/case_images/moblrnCMS/moblrnCMS3Low.png);
+  margin-left: -22%;
+margin-top: -6%;
+  }
+.moblrnPubWeb:nth-child(1){
+  background-image: url(../images/case_images/moblrnPubWeb/moblrnPubWeb1High.png), url(../images/case_images/moblrnPubWeb/moblrnPubWeb1.png), url(../images/case_images/moblrnPubWeb/moblrnPubWeb1Low.png);
+  margin-left: -50%;
+      margin-top: -5%;}
+
+.moblrnPubWeb:nth-child(2){
+  background-image: url(../images/case_images/moblrnPubWeb/moblrnPubWeb2High.png), url(../images/case_images/moblrnPubWeb/moblrnPubWeb2.png), url(../images/case_images/moblrnPubWeb/moblrnPubWeb2Low.png);
+  margin-left: -28%;
+  margin-top: 7%;}
+
+.moblrnPubWeb:nth-child(3){
+  background-image: url(../images/case_images/moblrnPubWeb/moblrnPubWeb3High.png), url(../images/case_images/moblrnPubWeb/moblrnPubWeb3.png), url(../images/case_images/moblrnPubWeb/moblrnPubWeb3Low.png);
+  margin-left: -6%;
+  margin-top: 19%;
+}
+
+  .dreamhack:nth-child(1){
+    background-image: url(../images/case_images/dreamhack/dreamhack1High.png), url(../images/case_images/dreamhack/dreamhack1.png), url(../images/case_images/dreamhack/dreamhack1Low.png);
+    margin-left: 25%;
+        margin-top: -5%;
+    }
+
+  .dreamhack:nth-child(2){
+    background-image: url(../images/case_images/dreamhack/dreamhack2High.png), url(../images/case_images/dreamhack/dreamhack2.png), url(../images/case_images/dreamhack/dreamhack2Low.png);
+    margin-left: 17%;
+margin-top: 9%;
+}
+
+  .dreamhack:nth-child(3){
+    background-image: url(../images/case_images/dreamhack/dreamhack3High.png), url(../images/case_images/dreamhack/dreamhack3.png), url(../images/case_images/dreamhack/dreamhack3Low.png);
+    margin-left: -18%;
+margin-top: 9%;
+    }
+
+
+.moblrnPubWeb/*.first*/{
+  background-image: url(../images/case_images/moblrnPubWeb/moblrnPubWeb1High.png), url(../images/case_images/moblrnPubWeb/moblrnPubWeb1.png), url(../images/case_images/moblrnPubWeb/moblrnPubWeb1Low.png);
 }
 
 .project3Wrapper .imageBuff{
@@ -117,24 +225,93 @@ li{
   background-size: 100%;
 }
 
-.introWrapper .imageBuff{
+.project1Wrapper .imageBuff{
   background-image: url(../images/portrait_high.png), url(../images/portrait.png), url(../images/portrait_low.png);
 }
 
 
 
 @media  (hover:none) {
+  nav{
+  display: none;
+  /* box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50); */
+  }
+
   body{
     overflow-x: hidden;
   }
 
-  .introWrapper .imageBuff{
+  .moblrnApp:nth-child(1){
+    margin-left: 25%;
+    margin-top: 75%;
+    }
+
+  .moblrnApp:nth-child(2){
+    margin-left: 25%;
+    margin-top: 35%;
+    }
+
+  .moblrnApp:nth-child(3){
+    margin-left: 25%;
+    margin-top: 55%;
+    }
+
+    .moblrnApp:nth-child(4){
+      margin-left: 25%;
+        margin-top: 75%;
+      }
+
+  .moblrnCMS:nth-child(1){
+    margin-left:25%;
+    margin-top: 30%;
+    }
+
+  .moblrnCMS:nth-child(2){
+    margin-left: 25%;
+    margin-top: 0%;
+  }
+
+  .moblrnCMS:nth-child(3){
+    margin-left: 25%;
+    margin-top: -30%;
+    }
+  .moblrnPubWeb:nth-child(1){
+    margin-left:25%;
+    margin-top: 30%;
+    }
+
+  .moblrnPubWeb:nth-child(2){
+    margin-left: 25%;
+    margin-top: 0%;
+  }
+
+  .moblrnPubWeb:nth-child(3){
+    margin-left: 25%;
+    margin-top: -30%;
+    }
+
+    .dreamhack:nth-child(1){
+      margin-left:25%;
+      margin-top: 30%;
+      }
+
+    .dreamhack:nth-child(2){
+      margin-left: 25%;
+      margin-top: 0%;
+    }
+
+    .dreamhack:nth-child(3){
+      margin-left: 25%;
+      margin-top: -30%;
+      }
+
+  .project1Wrapper .imageBuff{
     width: 100%;
 
   }
 
 
-  .introWrapper .textBox{
+  .project1Wrapper .textBox{
     align-self: flex-end;
     background-color: rgba(255, 255, 255, 0.7)
   }
@@ -148,8 +325,18 @@ li{
     justify-content: flex-end;
     overflow: hidden;
   }
+  .project6Wrapper{
+      /* flex-direction: column !important; */
+      height: 100%;
+      min-height: 120vh;
+      width: 90%;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      margin: 30px;
+    }
 
-  .introWrapper.wrapper{
+  .project1Wrapper.wrapper{
     min-height: 100vh;
   }
 
@@ -167,30 +354,33 @@ li{
     max-height: 100vh;
   }
 
-  .introWrapper .imageBuff{
+  .multiImageHolder{
+    position: absolute;
+    max-width: 100vw;
+    align-self: flex-start;
+    max-height: 100vh;
+  }
+
+  .project1Wrapper .imageBuff{
     max-height: 100vh;
     background-size: cover;
   }
 
-  .project5Wrapper .imageBuff{
-    background-size: 300%;
+  .imageDesktopHolder{
+    transform: scale(2) !important;
   }
 
-  .project4Wrapper .imageBuff{
-    background-size: 300%;
-  }
-
-  .project3Wrapper .imageBuff{
-    background-size: 300%;
-  }
-
-  .project2Wrapper .imageBuff{
-    background-size: 300%;
-  }
 }
 
 @media  (hover:hover) {
-
+  nav{
+  position: fixed;
+  margin-top: 20vh;
+  z-index: 5000;
+  background-color: white;
+  transition: 0.3s;
+  /* box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50); */
+  }
 
 
 .project5Wrapper .imageBuff{
