@@ -1,5 +1,5 @@
 window.onload = function(){
-$( document ).ready(function() {
+// $( document ).ready(function() {
     console.log( "ready!" );
     var windowWidth = $(document).width();
     var windowHeight = $(document).height();
@@ -147,5 +147,5 @@ $( document ).ready(function() {
         scrollSpeed(DIRECTION.LEFT, ".dreamhack.third",fifthBoxScroll)
       }
     })
-});
+;
 };
