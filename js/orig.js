@@ -66,19 +66,19 @@ $( document ).ready(function() {
       var toppen = $(window).scrollTop();
       var loadBar = windowWidth/(windowHeight-$(window).height())*toppen
 
-      const SPEED = {
+      var SPEED = {
         SLOW: 3,
         MEDIUMSLOW: 2.5,
         MEDIUM: 2,
         MEDIUMFAST: 1.5,
         FAST: 1.5,
       }
-      const DIRECTION = {
+      var DIRECTION = {
         LEFT: -1,
         RIGHT: 1,
       }
 
-      function scrollSpeed (direction = DIRECTION.RIGHT, className, caseNumberBoxScroll, speed = SPEED.FAST){
+      function scrollSpeed (direction, className, caseNumberBoxScroll, speed){
         // var scrollAnimation = (((toppen-caseNumberBoxScroll)*-windowWidth/1000)/speed);
         var scrollAnimation = (((toppen-caseNumberBoxScroll)*-windowWidth/1000)/speed)*direction;
         var fadeAnimation = ((toppen-caseNumberBoxScroll)+700)/700;
@@ -134,17 +134,17 @@ $( document ).ready(function() {
       if(isInView(thirdBoxScroll, thirdBoxheight)){
          scrollSpeed(DIRECTION.LEFT, ".moblrnCMS.first",thirdBoxScroll,SPEED.SLOW)
          scrollSpeed(DIRECTION.LEFT, ".moblrnCMS.second",thirdBoxScroll,SPEED.MEDIUM)
-         scrollSpeed(DIRECTION.LEFT, ".moblrnCMS.third",thirdBoxScroll,SPEED.FAST)
+         scrollSpeed(DIRECTION.LEFT, ".moblrnCMS.third",thirdBoxScroll,SPEED.MEDIUMFAST)
        }
       if(isInView(fourthBoxScroll, fourthBoxheight)){
          scrollSpeed(DIRECTION.RIGHT, ".moblrnPubWeb.first",fourthBoxScroll,SPEED.SLOW)
          scrollSpeed(DIRECTION.RIGHT, ".moblrnPubWeb.second",fourthBoxScroll,SPEED.MEDIUM)
-         scrollSpeed(DIRECTION.RIGHT, ".moblrnPubWeb.third",fourthBoxScroll)
+         scrollSpeed(DIRECTION.RIGHT, ".moblrnPubWeb.third",fourthBoxScroll, SPEED.MEDIUMFAST)
     }
       if(isInView(fifthBoxScroll, fifthBoxheight)){
         scrollSpeed(DIRECTION.LEFT, ".dreamhack.first",fifthBoxScroll,SPEED.SLOW)
         scrollSpeed(DIRECTION.LEFT, ".dreamhack.second",fifthBoxScroll,SPEED.MEDIUM)
-        scrollSpeed(DIRECTION.LEFT, ".dreamhack.third",fifthBoxScroll)
+        scrollSpeed(DIRECTION.LEFT, ".dreamhack.third",fifthBoxScroll, SPEED.MEDIUMFAST)
       }
     })
 });
