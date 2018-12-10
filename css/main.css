@@ -118,7 +118,7 @@ li{
   margin: 5vh;
   height: 100vh;
   max-height: 300px;
-  width: 30%;
+  width: 50%;
   background-position: center;
   background-repeat: no-repeat;
   background-size:contain;
@@ -133,13 +133,14 @@ li{
   background-position: center;
   background-repeat: no-repeat;
   background-size:contain;
+  opacity: 0;
 }
 
 
 .moblrnApp:nth-child(1){
   background-image: url(../images/case_images/moblrnApp/moblrnApp1High.png), url(../images/case_images/moblrnApp/moblrnApp1.png), url(../images/case_images/moblrnApp/moblrnApp1Low.png);
   margin-left: -43%;
-      margin-top: 0%;
+  margin-top: 0%;
   }
 
 .moblrnApp:nth-child(2){
