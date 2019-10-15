@@ -360,6 +360,7 @@ margin-top: 9%;
 
   .imageDesktopHolder{
     transform: scale(2) !important;
+    opacity: 1 !important;
   }
 
 }
@@ -399,7 +400,9 @@ margin-top: 9%;
 
 .textBox{
   transform: translateY(20vh);
+
 }
+
 
 #introTextbox{
   transform: none !important;
