@@ -1,12 +1,14 @@
 <!doctype html>
+<html lang="en">
 <head>
+  <meta http-equiv="refresh" content="100" >
+
   <meta charset="UTF-8">
   <meta name="description" content="UX Designer">
   <meta name="keywords" content="UX,UI,hyper island,app,frontend,coder,design,gamedesigner,artist,graphic,best,sweden">
  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Thomas Björksund UX</title>
 <script type="text/javascript" src="./js/main.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link rel="stylesheet" href="./css/main.css">
   <link rel="icon"
       type="image/png"
@@ -16,16 +18,18 @@
 
 <div id=scrollBar></div>
 <div class="background"></div>
-<a href="mailto:thomasbjorksund@axakon.se">
+<a href="mailto:thomasbjorksund@axakon.se" aria-label="Contact me and let's talk about collaborations">
 <div id="email">
 </div></a>
 <nav>
-<li class ="activeLi"id="1">Home</li>
-<li id="2">Case 01</li>
-<li id="3">Case 02</li>
-<li id="4">Case 03</li>
-<li id="5">Case 04</li>
-<li id="6">End</li>
+  <ul>
+    <li class ="activeLi"id="1">Home</li>
+    <li id="2">Case 01</li>
+    <li id="3">Case 02</li>
+    <li id="4">Case 03</li>
+    <li id="5">Case 04</li>
+    <li id="6">End</li>
+  </ul>
 </nav>
 <div class="project1Wrapper wrapper">
   <div  class="potrait imageBuff"></div>
@@ -43,10 +47,26 @@
 </div>
 <div class="project2Wrapper wrapper">
   <div class="multiImageHolder">
-    <div class ="imageDesktopHolder moblrnApp first"></div>
-    <div class ="imageDesktopHolder moblrnApp second"></div>
-    <div class ="imageDesktopHolder moblrnApp third"></div>
-    <div class ="imageDesktopHolder moblrnApp fourth"></div>
+    <picture class ="imageDesktopHolder moblrnApp first">
+      <source media="(min-width: 1000px)" srcset="images/case_images/moblrnApp/moblrnApp1High.png" class="imageDesktopHolderImg"/>
+      <source media="(min-width: 465px)" srcset="images/case_images/moblrnApp/moblrnApp1.png" class="imageDesktopHolderImg"/>
+      <img src="images/case_images/moblrnApp/moblrnApp1Low.png" alt="Flowers" class="imageDesktopHolderImg"/>
+    </picture>
+    <picture class ="imageDesktopHolder moblrnApp second">
+      <source media="(min-width: 1000px)" srcset="images/case_images/moblrnApp/moblrnApp2High.png" class="imageDesktopHolderImg"/>
+      <source media="(min-width: 465px)" srcset="images/case_images/moblrnApp/moblrnApp2.png" class="imageDesktopHolderImg"/>
+      <img src="images/case_images/moblrnApp/moblrnApp2Low.png" alt="Flowers" class="imageDesktopHolderImg"/>
+    </picture>
+      <picture class ="imageDesktopHolder moblrnApp third">
+      <source media="(min-width: 1000px)" srcset="images/case_images/moblrnApp/moblrnApp3High.png" class="imageDesktopHolderImg"/>
+      <source media="(min-width: 465px)" srcset="images/case_images/moblrnApp/moblrnApp3.png" class="imageDesktopHolderImg"/>
+      <img src="images/case_images/moblrnApp/moblrnApp3Low.png" alt="Flowers" class="imageDesktopHolderImg"/>
+    </picture>
+      <picture class ="imageDesktopHolder moblrnApp fourth">
+      <source media="(min-width: 1000px)" srcset="images/case_images/moblrnApp/moblrnApp4High.png" class="imageDesktopHolderImg"/>
+      <source media="(min-width: 465px)" srcset="images/case_images/moblrnApp/moblrnApp4.png" class="imageDesktopHolderImg"/>
+      <img src="images/case_images/moblrnApp/moblrnApp4Low.png" alt="Flowers" class="imageDesktopHolderImg"/>
+    </picture>
 
   </div>
   <!-- <div  class="moblrnApp imageBuff">
@@ -152,3 +172,5 @@ Let's grab a coffee & talk some more!
 <div>
 </div>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</html>

@@ -136,27 +136,34 @@ li{
   opacity: 0;
 }
 
+.imageDesktopHolderImg{
+  position: absolute;
+  margin: 5vh;
+  object-fit: contain;
+  max-width: 500px;
+}
+
 
 .moblrnApp:nth-child(1){
-  background-image: url(../images/case_images/moblrnApp/moblrnApp1High.png), url(../images/case_images/moblrnApp/moblrnApp1.png), url(../images/case_images/moblrnApp/moblrnApp1Low.png);
+  /* background-image: url(../images/case_images/moblrnApp/moblrnApp1High.png), url(../images/case_images/moblrnApp/moblrnApp1.png), url(../images/case_images/moblrnApp/moblrnApp1Low.png); */
   margin-left: -46%;
   margin-top: 0%;
   }
 
 .moblrnApp:nth-child(2){
-  background-image: url(../images/case_images/moblrnApp/moblrnApp2High.png), url(../images/case_images/moblrnApp/moblrnApp2.png), url(../images/case_images/moblrnApp/moblrnApp2Low.png);
+  /* background-image: url(../images/case_images/moblrnApp/moblrnApp2High.png), url(../images/case_images/moblrnApp/moblrnApp2.png), url(../images/case_images/moblrnApp/moblrnApp2Low.png); */
   margin-left: -23%;
 margin-top: 12%;
 }
 
 .moblrnApp:nth-child(3){
-  background-image: url(../images/case_images/moblrnApp/moblrnApp3High.png), url(../images/case_images/moblrnApp/moblrnApp3.png), url(../images/case_images/moblrnApp/moblrnApp3Low.png);
+  /* background-image: url(../images/case_images/moblrnApp/moblrnApp3High.png), url(../images/case_images/moblrnApp/moblrnApp3.png), url(../images/case_images/moblrnApp/moblrnApp3Low.png); */
   margin-left: -9%;
 margin-top: 5%;
   }
 
   .moblrnApp:nth-child(4){
-    background-image: url(../images/case_images/moblrnApp/moblrnApp4High.png), url(../images/case_images/moblrnApp/moblrnApp4.png), url(../images/case_images/moblrnApp/moblrnApp4Low.png);
+    /* background-image: url(../images/case_images/moblrnApp/moblrnApp4High.png), url(../images/case_images/moblrnApp/moblrnApp4.png), url(../images/case_images/moblrnApp/moblrnApp4Low.png); */
     margin-left: -31%;
 margin-top: -7%;
     }
